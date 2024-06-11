@@ -1,3 +1,5 @@
+package controller;
+
 import service.AparelhoEletronico;
 import service.NavegadorInternet;
 import service.ReprodutorMusical;
@@ -13,6 +15,7 @@ public class Iphone {
     public Iphone() {
         System.out.println("Ligando o iphone");
     }
+    
     public AparelhoEletronico getAparelhoEletronico() {
         return aparelhoEletronico;
     }
