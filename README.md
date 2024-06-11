@@ -16,6 +16,7 @@ Neste desafio, você será responsável por modelar e diagramar a representaçã
 1. Criar um diagrama UML que represente as funcionalidades descritas acima.
 2. Implementar as classes e interfaces correspondentes em Java (Opcional).
 
+
 ### Minha resolução
 ```mermaid
 ---
@@ -55,3 +56,32 @@ classDiagram
     }
     
 ```
+
+### Estrutura do projeto
+
+```
+.
+├── README.md
+├── bin
+│   ├── App.class
+│   ├── controller
+│   │   └── Iphone.class
+│   ├── model
+│   │   └── Musica.class
+│   └── service
+│       ├── AparelhoEletronico.class
+│       ├── NavegadorInternet.class
+│       └── ReprodutorMusical.class
+├── lib
+└── src
+    ├── App.java
+    ├── controller
+    │   └── Iphone.java
+    ├── model
+    │   └── Musica.java
+    └── service
+        ├── AparelhoEletronico.java
+        ├── NavegadorInternet.java
+        └── ReprodutorMusical.java
+```
+
