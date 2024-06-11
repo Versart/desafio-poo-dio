@@ -17,3 +17,41 @@ Neste desafio, você será responsável por modelar e diagramar a representaçã
 2. Implementar as classes e interfaces correspondentes em Java (Opcional).
 
 ### Minha resolução
+```mermaid
+---
+title: Iphone
+---
+classDiagram
+   Iphone --> "1..*" ReprodutorMusical
+   Iphone --> "1..*" NavegadorInternet
+   Iphone --> "1" AparelhoEletronico
+   ReprodutorMusical --> "1..*" Musica
+    class ReprodutorMusical{
+        - musica: Musica
+        + tocarMusica()
+        + pausarMusica()
+        + selecionarMusica(Musica musica) 
+    }
+    class NavegadorInternet{
+        - url: String
+        + exibirPagina(String url)
+        + adicionarNovaAba()
+        + atualizarPagina()
+    }
+    class AparelhoEletronico {
+        + atender()
+        + ligar(String numero)
+        + iniciarCorreioDeVoz()
+    }
+    class Musica {
+      - nome: String
+      - artista: String
+      + informacoesMusica() String
+    }
+    class Iphone {
+       - aparelhoEletronico: AparelhoEletronico
+       - navegadorInternet: NavegadorInternet
+       - reprodutorMusical: ReprodutorMusical  
+    }
+    
+```
